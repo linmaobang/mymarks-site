@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyMarks 隐私政策</title>
+<style>
+  :root { --ink:#24503B; --deep:#1B3D2D; --paper:#F4ECDA; --card:#FCF7EC; --brass:#A8842B; --text:#2C2A25; --muted:#6B6455; --line:rgba(36,80,59,.15); }
+  @media (prefers-color-scheme: dark) { :root { --ink:#7FB99C; --deep:#BFE0CC; --paper:#12100B; --card:#1C1913; --brass:#D3AE55; --text:#E8E1D0; --muted:#A39A86; --line:rgba(255,255,255,.1); } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--text); font:16px/1.75 -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 72px; }
+  .eyebrow { font:600 12px/1 ui-monospace, Menlo, monospace; letter-spacing:.2em; color:var(--brass); }
+  h1 { font-family:"Songti SC", "Noto Serif SC", serif; color:var(--deep); font-size:34px; margin:10px 0 4px; }
+  h2 { font-family:"Songti SC", "Noto Serif SC", serif; color:var(--deep); font-size:21px; margin:36px 0 8px; padding-top:20px; border-top:1px dashed var(--line); }
+  .meta { color:var(--muted); font-size:14px; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin:24px 0; }
+  .summary li { margin:4px 0; }
+  table { width:100%; border-collapse:collapse; font-size:15px; margin:8px 0; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; white-space:nowrap; }
+  a { color:var(--ink); }
+  .wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">MYMARKS · PRIVACY</div>
+  <h1>MyMarks 隐私政策</h1>
+  <p class="meta">生效日期：2026 年 10 月 29 日</p>
+
+  <div class="summary">
+    <strong>简要说明</strong>
+    <ul>
+      <li>你的地点记录、照片和笔记只保存在你自己的设备上。MyMarks 没有自己的服务器，也没有账号系统。</li>
+      <li>我们不收集分析数据，不做广告追踪，也不出售任何数据。</li>
+      <li>只有在你主动开启并配置后，部分内容才会发送给你自己选择的第三方服务（AI 服务、高德地图）。</li>
+    </ul>
+  </div>
+
+  <h2>1. 存在你设备上的数据</h2>
+  <p>你在 MyMarks 中创建的地点记录（名称、类别、坐标、评分、标签、小结、到访笔记）和照片，保存在 App 的本地存储中。你填写的 API Key 保存在系统钥匙串（Keychain）中。这些数据不会上传到 MyMarks 开发者的任何服务器。</p>
+  <p>删除 App 会同时删除这些数据。你可以随时在「我的 → 备份手账」中把记录导出为 JSON 和 Markdown 文件。</p>
+
+  <h2>2. 系统权限及用途</h2>
+  <div class="wrap">
+  <table>
+    <tr><th>权限</th><th>用途</th></tr>
+    <tr><td>位置</td><td>在你使用 App 时获取当前位置，用来记录地点、显示附近的店铺。不会在后台持续定位。</td></tr>
+    <tr><td>相机 / 照片</td><td>拍摄或选择招牌、菜单、收据的照片，在设备上用 Apple Vision 识别文字（OCR）。照片本身不会上传。</td></tr>
+    <tr><td>麦克风 / 语音识别</td><td>把你说的话转写成文字记录。语音转写由 Apple 的语音识别服务完成，音频可能会发送到 Apple 处理，适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。</td></tr>
+  </table>
+  </div>
+  <p>你可以随时在 iOS「设置」中关闭任何权限，关闭后对应功能不可用，其余功能照常。</p>
+
+  <h2>3. 发送给第三方服务的数据</h2>
+  <p><strong>AI 服务（可选，默认关闭）。</strong>当你在「我的 → AI 助理」中填写自己的 API Key，并在「隐私与数据」中允许发送后，使用智能整理、回顾、问答、推荐、行程和语义搜索时，相关的地点名称、地址、评分、标签、小结和笔记会直接从你的设备发送到你选择的 AI 服务（例如 DeepSeek、OpenAI 或其他兼容服务）。这些数据由该服务按其自己的隐私政策处理，不经过 MyMarks 的服务器。关闭授权后 AI 功能不可用，其余功能照常。</p>
+  <p><strong>地图与附近地点。</strong>地图显示和地点查询使用 Apple 地图（MapKit），适用 Apple 隐私政策。在中国大陆范围内，如果启用了高德 Web 服务，查询附近店铺时会把所在位置的坐标发送给高德地图（<a href="https://lbs.amap.com/pages/privacy/">高德隐私政策</a>）。</p>
+
+  <h2>4. 我们不做的事</h2>
+  <ul>
+    <li>不收集设备标识符、使用统计或崩溃日志。</li>
+    <li>不接入广告或第三方追踪 SDK，不跨 App 或网站追踪你。</li>
+    <li>不出售、出租或共享你的个人信息。</li>
+  </ul>
+
+  <h2>5. 儿童隐私</h2>
+  <p>MyMarks 不面向 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+
+  <h2>6. 政策更新</h2>
+  <p>如果本政策有实质变化，我们会更新本页面的生效日期，并在 App 更新说明中提示。</p>
+
+  <h2>7. 联系我们</h2>
+  <p>对本政策或你的数据有任何疑问，请发邮件至 <a href="mailto:linmaobang@gmail.com">linmaobang@gmail.com</a>。</p>
+</main>
+</body>
+</html>
